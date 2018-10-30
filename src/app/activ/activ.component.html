@@ -3,7 +3,7 @@
   <time [dateTime]="activ.data">{{activ.data}}</time>
   <header>
       <ul>
-        <li *ngFor="let tags of activ.etiquetes" class="tag">{{tags.id_etiqueta.etiqueta}}</li>
+        <li *ngFor="let tags of activ.etiquetes" class="tag">{{tags.id_etiqueta?.etiqueta}}</li>
       </ul>
       <h2>{{activ.titol}}</h2>
   </header>
