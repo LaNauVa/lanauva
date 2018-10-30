@@ -1,5 +1,4 @@
-# lanauva
-Web de la LaNauVa
+# Web de la LaNauVa
 
 Web basat en el concepte "headless CMS" i "decoupled".
 
