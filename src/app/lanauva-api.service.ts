@@ -8,7 +8,7 @@ import { map, retry } from 'rxjs/operators'
 })
 export class LanauvaAPIService {
 
-  baseurl = 'http://localhost:8080/lanauva-api/api/public/_/items/'
+  baseurl = 'https://www.lanauva.com/api/public/_/items/'
 
   constructor(private http: HttpClient) {
 
