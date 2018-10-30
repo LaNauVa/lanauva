@@ -1,0 +1,16 @@
+<pre>
+  {{
+    gallery$ | async | json
+  }}
+</pre>
+
+<section *ngFor='let gallery of gallery$ | async' class="grid-gallery">
+  <h2>{{gallery.titol}}</h2><br>
+  <article>
+      <figure *ngFor='let imatge of gallery.fotos'>
+          <img [src]='imatge.foto.data.full_url' [alt]='imatge.imatge_alt'>
+          <figcaption>{{imatge.imatge_caption}}</figcaption>
+      </figure>
+
+  </article>
+</section>

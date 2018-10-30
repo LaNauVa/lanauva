@@ -1,0 +1,16 @@
+<article *ngFor='let post of posts$ | async' class="grid-blog">
+
+  <img [src]='post.imatge.data.full_url' [alt]='post.imatge_alt'>
+
+ <header>
+     <ul>
+         <li *ngFor='let tags of post.etiquetes' class="tag">{{tags.id_etiqueta.etiqueta}}</li>
+     </ul>
+     <h2>{{ post.titol }}</h2>
+ </header>
+ <time [dateTime]="post.data">{{post.data}}</time>
+ <h3>{{post.text_inici}}</h3>
+ <main [innerHTML]='post.text_cos'>
+
+ </main>
+</article>

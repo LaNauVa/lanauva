@@ -1,0 +1,32 @@
+.equip{
+    h3{
+        font-size: 3em;
+    }
+    .grid-person{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+        grid-gap: 5vw;;
+        width: 100%;
+        figure{
+            display: grid;
+            grid-template-rows: minmax(100px, 200px) repeat(3,auto);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .mini-xarxa{
+        display: grid;
+        //grid-template-columns: repeat(auto-fill, minmax(32px, auto));
+        grid-gap: 1vw;
+        width: 100%;
+        figure{
+            display: block;
+            a img{
+                width: 100%;
+                }
+            }
+        }
+    }
+}

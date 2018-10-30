@@ -1,0 +1,14 @@
+<section class="equip">
+  <h3>Qui som</h3><br>
+  <div class="grid-person">
+       <figure *ngFor='let persona of equip$ | async'>
+           <img [src]="persona.imatge.data.full_url" [alt]="persona.nom">
+           <figcaption>{{persona.nom}}</figcaption>
+           <p>{{persona.habilitats}}</p>
+           <div class="mini-xarxa">
+                   <a *ngFor='let xarxa of persona.xarxes' [href]="xarxa.url">{{ xarxa.xarxa }}</a>
+
+           </div>
+       </figure>
+  </div>
+</section>

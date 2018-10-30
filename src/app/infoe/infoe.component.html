@@ -1,0 +1,20 @@
+<section *ngFor='let info of infoEmpresa$ | async' class="infoempresa">
+  <img [src]='info.logo.data.full_url' alt='info.nom'>
+  <main>
+    <h1>{{info.nom}}</h1>
+    <h2>{{info.titol}}</h2>
+
+    <p>{{info.descripcio}}</p>
+  </main>
+  <aside>
+    <h3>{{info.contacte}}</h3>
+    <h4>Web:</h4>
+    <a [href]='info.link'>{{info.link}}</a>
+    <br>
+    <h4>Xarxes</h4>
+    <div class="xarxa">
+
+        <a *ngFor='let xarxa of info.xxss' [href]="xarxa.link">{{xarxa.xarxa}}</a>
+    </div>
+  </aside>
+</section>

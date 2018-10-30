@@ -1,0 +1,36 @@
+.infoempresa{
+    display: grid;
+    grid-template-columns: minmax(175px,300px) auto;
+    grid-column-gap: 2vw;
+    img{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    main{
+        grid-area: 1 / 2 / 3 / 3;
+        h1{
+        font-size: 4.5em;
+        }
+        h2{
+            text-align: right;
+        }
+        p{
+            align-self: end;
+        }
+    
+    }
+    aside{
+        grid-area: 2 / 1 / 3 / 2;
+        .xarxa {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(32px, auto));
+            grid-gap: 2vw;
+            width: 100%;
+            figure{     
+            a img{
+                margin: 5px;
+                width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+$tipoTitol:"Arial";
+$tipoCos:"Roboto";
+$colorNegre:#000;
+$colorDestacat:#30bb30;
+$colorGris: #888;
+$colorBlanc:#fff;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700);
+
+body {
+    max-width: 70%;
+}
+
+h1 {
+    font-family: $tipoTitol;
+    color: $colorNegre;
+}
+h2 {
+    font-size: 2em;
+    color: $colorDestacat;
+}
+
+h3, p, time {
+    font-family: $tipoCos;
+
+}
+
+.tag {
+    font-family: $tipoCos;
+    color: $colorGris;
+}
+
+ul{
+  padding: 0px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+    .grid-blog,
+    .grid-activ,
+    .grid-gallery
+    .infoempresa {
+        display: block;
+    }
+}

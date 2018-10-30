@@ -1,0 +1,14 @@
+<article *ngFor='let activ of activ$ | async' class="grid-activ">
+  <img [src]='activ.imatge.data.full_url' [alt]='activ.imatgealt'>
+  <time [dateTime]="activ.data">{{activ.data}}</time>
+  <header>
+      <ul>
+        <li *ngFor="let tags of activ.etiquetes" class="tag">{{tags.id_etiqueta.etiqueta}}</li>
+      </ul>
+      <h2>{{activ.titol}}</h2>
+  </header>
+      <h3>{{activ.text_inici}}</h3>
+      <main [innerHTML]='activ.text_cos'>
+
+      </main>
+</article>
